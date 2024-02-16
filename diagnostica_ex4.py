@@ -9,18 +9,18 @@ def print_matrix_with_indices(matrix):
         print()
 
 def input_matrix():
-    param = [[8,3,4], [1,5,9], [6,7,2]]
     matrix = []
-    for i in range(len(param)):
+    for i in range(3):
         m = []
-        for j in range(len(param[i])):
+        for j in range(3):
             m.append(int(input(f"Insira o número da matriz na posição {i};{j}: ")))
         print()
         matrix.append(m)
     return matrix
 
-matriz = [[8,3,4], [1,5,9], [6,7,2]]
 
-#print_matrix_with_indices(matriz)
 
-print(input_matrix())
+matrix = input_matrix()
+
+print_matrix_with_indices(matrix)
+
